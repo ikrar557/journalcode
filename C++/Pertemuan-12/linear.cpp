@@ -1,6 +1,5 @@
-// C++ code to linearly search x in arr[]. If x
-// is present then return its location, otherwise
-// return -1
+// Ikrar Bagaskara - 210103101 - 21T1'B
+// Program Linear Search
 
 #include <iostream>
 using namespace std;
@@ -22,17 +21,20 @@ void printArray(int arr[], int size)
 	cout << endl;
 }
 
-// Driver code
+
 int main(void)
 {
-	int arr[] = { 2, 3, 4, 10, 40 };
-	int x = 10;
+	int x;
+	int arr[] = { 10,20,30,40,50,60,70,80,90,100};
 	int n = sizeof(arr) / sizeof(arr[0]);
-    printArray(arr, n);
+	printArray(arr, n);
+	cout << "Masukkan data yang akan di cari : ";
+	cin >> x ;
+
 	// Function call
 	int result = search(arr, n, x);
 	(result == -1)
-		? cout << "Element is not present in array"
-		: cout << "Element is present at index " << result;
+		? cout << "Data tidak ada pada array"
+		: cout << "Data tersedia pada array kolom : " << result;
 	return 0;
 }
