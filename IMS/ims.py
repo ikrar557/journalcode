@@ -1,7 +1,7 @@
 #Inventory Management System
 #Thanks to "Momen Shilia" for guide, linkendin "https://www.linkedin.com/in/momen-shili-a00291192/"
 
-#Dictionaries
+##################### Penerapan "Dictionaries" ####################
 unit_price={}
 description={}
 stock={}
@@ -43,9 +43,10 @@ for i in range(0,no_items):
     stock.update({x1: x2})
 
 details.close()
+##################### Penerapan "List" ####################
 #List untuk menyimpan barang
 cart=[]
-
+##################### Penerapan "Function" ####################
 #Function untuk menu
 def menu():
     print("Inventory Management Systems \n")
@@ -60,7 +61,7 @@ def menu():
     print("Q - Keluar")
     print("X - Hapus Barang Dari Keranjang")
     print("Help - Tampilkan Bantuan \n")
-    
+   
 #Memanggil function menu() 
 menu()
 
@@ -217,6 +218,7 @@ while(c != "q" or c != "Q"):
 
         #Tampilkan Semua Perintah
     elif(c == "help" or c == "h" or c == "Help" or c == "H"):
+        ##################### Penerapan "Function" ####################
         #Memanggil function menu()
         menu()
 
