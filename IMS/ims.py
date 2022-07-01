@@ -47,7 +47,7 @@ details.close()
 cart=[]
 
 #Function untuk menu
-def menu()
+def menu():
     print("Inventory Management Systems \n")
     print("A - Tambahkan Barang")
     print("R - Hapus Barang")
