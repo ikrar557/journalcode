@@ -46,19 +46,23 @@ details.close()
 #List untuk menyimpan barang
 cart=[]
 
-#Perintah yang digunakan
-print("Inventory Management Systems \n")
-print("A - Tambahkan Barang")
-print("R - Hapus Barang")
-print("E - Edit Barang Tertentu")
-print("L - Tampilkan List Barang")
-print("D - Detail Barang")
-print("B - Beli Barang")
-print("C - Checkout")
-print("S - Tampilkan Barang Yang Dibeli")
-print("Q - Keluar")
-print("X - Hapus Barang Dari Keranjang")
-print("Help - Tampilkan Bantuan \n")
+#Function untuk menu
+def menu()
+    print("Inventory Management Systems \n")
+    print("A - Tambahkan Barang")
+    print("R - Hapus Barang")
+    print("E - Edit Barang Tertentu")
+    print("L - Tampilkan List Barang")
+    print("D - Detail Barang")
+    print("B - Beli Barang")
+    print("C - Checkout")
+    print("S - Tampilkan Barang Yang Dibeli")
+    print("Q - Keluar")
+    print("X - Hapus Barang Dari Keranjang")
+    print("Help - Tampilkan Bantuan \n")
+    
+#Memanggil function menu() 
+menu()
 
 #Giving "0" to variable, agar bisa dipanggil dan digunakan
 total_cost=0 
@@ -213,17 +217,8 @@ while(c != "q" or c != "Q"):
 
         #Tampilkan Semua Perintah
     elif(c == "help" or c == "h" or c == "Help" or c == "H"):
-        print("A - Tambahkan Barang")
-        print("R - Hapus Barang")
-        print("E - Edit Barang Tertentu")
-        print("L - Tampilkan List Barang")
-        print("D - Detail Barang")
-        print("B - Beli Barang")
-        print("C - Checkout")
-        print("S - Tampilkan Barang Yang Dibeli")
-        print("Q - Keluar ")
-        print("X - Hapus Barang Dari Keranjang")
-        print("Help - Tampilkan Bantuan \n")
+        #Memanggil function menu()
+        menu()
 
     else:
         print("\nERROR! Hubungi Karyawan Untuk Meminta Bantuan \n")
